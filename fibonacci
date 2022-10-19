@@ -1,0 +1,23 @@
+
+
+package com.mycompany.fibonacci;
+
+import java.util.Scanner;
+
+public class fibonacci {
+
+    public static void main(String[] args) {
+       int  i ,num1,a = 0, b = 0 , c = 1 ;  
+       
+       Scanner num = new Scanner(System.in);
+       System.out.print("Enter The End Point :");
+       num1 = num.nextInt();
+       for( i = 1; i <= num1; i++){
+           a = b; 
+           b = c;
+           c = a + b;
+           System.out.print( a + " ");
+       }
+       
+    }
+}
