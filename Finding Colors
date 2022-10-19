@@ -1,0 +1,43 @@
+package com.mycompany.lab1task4color;
+
+import java.util.Scanner;
+
+public class Lab1task4Color {
+
+    public static void main(String[] args) {
+        
+        Scanner num = new Scanner(System.in);
+        System.out.print("Enter RGB Value : ");
+        String num1 = num.nextLine();
+        
+        switch(num1){
+            case "111":
+                System.out.print("White");
+                break;
+            case "000":
+                System.out.print("Black");
+                break;    
+            case "100":
+                System.out.print("Red");
+                break; 
+            case "010":
+                System.out.print("Green");
+                break;    
+            case "001":
+                System.out.print("Blue");
+                break;    
+            case "110":
+                System.out.print("Yellow");
+                break;    
+            case "011":
+                System.out.print("C");
+                break;    
+            case "101":
+                System.out.print("M");
+                break;    
+            default : 
+                System.out.print("Please check your value.");
+                
+        }
+    }
+}
