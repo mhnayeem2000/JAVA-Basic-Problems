@@ -1,0 +1,21 @@
+
+package com.mycompany.factorial;
+
+import java.util.Scanner;
+
+public class factorial {
+
+    public static void main(String[] args) {
+       int num1,fact = 1,i;
+       Scanner num = new Scanner(System.in);
+       System.out.print("Enter The End Point :");
+       num1 = num.nextInt();
+       System.out.print("Factorial is : ");
+       for(i = 1 ; i <= num1; i++ ){
+           fact = fact * i;
+           
+       }
+       System.out.println(fact);
+        
+    }
+}
