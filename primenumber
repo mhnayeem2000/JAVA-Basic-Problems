@@ -1,0 +1,21 @@
+package com.mycompany.primenumber;
+
+public class primenumber {
+
+    public static void main(String[] args) {
+        int num = 12, i , count = 0 ; 
+        //scanner num = new scanner(System.in);
+        for( i = 2; i < num ; i++){
+            if(num % i == 0 ){
+                count++;
+                break;
+            }
+        }
+        if( count == 0 ){
+            System.out.println("This is prime Number.");
+        }else {
+            System.out.println("Thsi is not prime number.");
+        }
+        
+    }
+}
