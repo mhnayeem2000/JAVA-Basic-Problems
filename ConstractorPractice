@@ -1,0 +1,100 @@
+===========================================
+
+//Lab 2 Task 1 : 
+
+
+
+
+
+package com.mycompany.lab2for45;
+    
+public  class Lab2for45{
+    
+    public static void main(String[] args){
+        
+       Student s = new Student("Nayeem",1);
+       System.out.println("Your Name : " + s.name + " " + ".Your Name : " +  s.id);
+    }
+    
+    
+    
+}
+class Student{
+        String name ;
+        int id;
+        
+        Student(String s,int i){
+            name = s ; id = i;
+        }
+
+
+}
+
+
+
+//===========================================
+
+
+
+//Lab 2 Task 2 : 
+
+
+
+
+package com.mycompany.lab2for45;
+    
+public  class Lab2for45{
+    
+    public static void main(String[] args){
+        
+       Rec s = new Rec(10,10,"Triangle");
+       Rec s1 = new Rec(10,"Rectangular",10);
+       Rec s2 = new Rec("circle",10);
+       s.dis();
+       s1.dis();
+       s2.dis();
+      
+    }
+    
+}
+
+
+
+class Rec{
+        int  base ;
+        int height;
+        String type;
+        double area;
+        int redius ; 
+        public Rec(int  s,int i,String t){
+            base  = s ; 
+            height = i;
+            type = t;
+            area = 0.5 * base * height;
+            
+        }
+        
+         public Rec(int  s,String t, int i){
+            base  = s ; 
+            height = i;
+            type = t;
+            area = base * height;
+            
+        }
+         
+        public Rec(String t, int r){
+            redius = r;
+            type = t;
+            area = 3.1416 * redius * redius;
+            
+        } 
+        
+        public void dis(){
+            System.out.println(" Total Area of  " + type + " is " + area);
+        }
+
+
+}
+
+
+//============================================
