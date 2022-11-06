@@ -1,0 +1,77 @@
+
+package com.mycompany.cgpacalculation;
+
+import java.util.Scanner;
+
+
+class student{
+    String name;
+    int id;
+    double marks1;
+    double marks2;
+    double gpa;
+    student( String n, int i,double m1,double m2){
+        name = n;
+        id = i ;
+        marks1 = m1;
+        marks2 = m2;
+        gpa =  (marks1 + marks2)/ 2;
+    }
+    
+    void cgpa(){
+        
+            if(marks1 >33 && marks2 >33){
+                if(gpa>=90){
+                    System.out.println("A+");
+                }
+                else if(gpa>=80){
+                    System.out.println("A");
+                }
+                else if(gpa>=70){
+                    System.out.println("B");
+                }
+                else if(gpa>=60){
+                    System.out.println("C");
+                }
+                else{
+                    System.out.println("D");
+                }
+        }
+        else{
+            System.out.println("Fail");
+        }
+       
+    }
+    
+    void display(){
+        System.out.println("================= STUDENT RESULT =============");
+        System.out.println("Student Name is : "+ name);
+         System.out.println("Student Id is : "+ id);
+          System.out.println("Student marsk1 is : "+ marks1);
+           System.out.println("Student Marks2 is : "+ marks2);
+           System.out.println("Student GPA is : "+gpa);
+            System.out.print("Student CGPA is : ");
+         cgpa();
+    }
+    
+    
+    
+}
+
+
+public class CGPACalculation {
+
+    public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       System.out.print("Enter Student Name : ");
+       String name = s.nextLine();
+       System.out.print("Enter Student Id : "); 
+       int id = s.nextInt();
+       System.out.print("Enter Student Marks1 : ");
+       double marks1 = s.nextDouble();
+       System.out.print("Enter Student Marks2 : ");
+       double marks2 = s.nextDouble();
+        student student1 = new student(name,id,marks1,marks2);
+        student1.display();
+    }
+}
