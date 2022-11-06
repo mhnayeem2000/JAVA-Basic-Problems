@@ -1,0 +1,30 @@
+
+package com.mycompany.assignment;
+
+public class Assignment {
+
+    public static void main(String[] args) {
+       int arr[] = {12,13,1,10,8,34,1};
+       int n = arr.length;
+       int smallest = Integer.MAX_VALUE;
+       
+       for( int i = 0 ; i < n ; i++){
+           if(arr[i] < smallest){
+               smallest = arr[i];
+           }
+       }
+       
+       System.out.println("Smallest value is : "+ smallest );
+    
+       int sec_smallest = Integer.MAX_VALUE;
+       
+       for( int i = 0 ; i < n ; i++){
+           if( arr[i] < sec_smallest && arr[i] > smallest){
+               sec_smallest = arr[i];
+           }
+       }
+       System.out.println("Secont valuee : "+ sec_smallest);
+    
+    
+    }
+}
