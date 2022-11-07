@@ -1,0 +1,25 @@
+package com.mycompany.homepracticenov7;
+
+class student{
+    String name;
+    int id;
+}
+
+
+  
+public class Homepracticenov7 {
+
+    public static void main(String[] args) {
+       
+        student s1 = new student();
+        student s2 = new student();
+       s1.name = " Nayeem";
+       s1.id = 45;
+        s2.name = " Fahim";
+       s2.id = 46;
+       System.out.println("Student 1  Name : " + s1.name);
+       System.out.println("Student 1 ID : " + s1.id);
+         System.out.println("Student 2  Name : " + s2.name);
+       System.out.println("Student 2 ID : " + s2.id);
+   } 
+}
